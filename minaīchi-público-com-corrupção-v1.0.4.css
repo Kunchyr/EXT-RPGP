@@ -1,0 +1,162 @@
+/* Gerais */
+
+.sheet-section-title {
+    text-align: center;
+}
+
+/* Perfil */
+
+.universal-sheet-profile {
+    flex-flow: row;
+}
+
+.profile-picture[data-v-7049edb4] {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    width: 110px;
+    height: 110px;
+    position: relative;
+}
+
+.profile-picture-frame[data-v-7049edb4] {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 200px;
+    height: 200px;
+    z-index: 1;
+}
+
+.profile-picture-img img[data-v-7049edb4] {
+    width: 100px;
+    height: 100px;
+    border-radius: 0%;
+}
+
+.profile-picture-img[data-v-7049edb4] {
+    position: initial;
+}
+
+.character-name[data-v-7049edb4] {
+    font-size: 36px;
+}
+
+/* Astúcias */
+
+.skill-info-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skill-label {
+    color: rgba(255, 255, 255);
+    font-weight: bold;
+}
+
+.base-label {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Rolagens */
+
+.classic-roll-container {
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    grid-template-rows: 1fr 52px;
+    grid-template-areas:
+      "dice dice"
+      "bonus roll";
+    gap: 5px;
+}
+
+.rolls-container {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(7, 1fr);
+    grid-area: dice;
+}
+
+.roll-bonus-container {
+    display: grid;
+    grid-auto-flow: row;
+    grid-area: bonus;
+}
+
+.roll-button-row {
+    display: grid;
+    grid-template-columns: 52px 1fr;
+    grid-auto-flow: row;
+    grid-area: roll;
+}
+
+.roll-option-container {
+    width: 54px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.roll-option-container > .roll-button > img {
+    transition: all 0.2s ease-out;
+}
+
+.roll-option-container > .roll-button > img:hover {
+    transform: rotate(5deg);
+    scale: 1.1;
+}
+
+/* Barras */
+
+.fraction-bar-label {
+    text-align: center;}
+
+/* Marcadores */
+
+.marker-card::before,
+.marker-card::after {
+    display: block;
+    text-align: center;
+    font-weight: bold;}
+
+.marker-card::before {
+    font-size: 16px;}
+
+.marker-card::after {
+    font-size: 12px;}
+
+/* 1 Marco */
+.marker-card:has(.marker-value:nth-child(1) img[src*="marker-circle-0"])::before {
+    content: "DETURPADO";}
+.marker-card:has(.marker-value:nth-child(1) img[src*="marker-circle-0"])::after {
+    content: "Marcas Corruptas mancham sua Essência.";}
+
+/* 2 Marcos */
+.marker-card:has(.marker-value:nth-child(1) img[src*="marker-circle-0"]):has(.marker-value:nth-child(2) img[src*="marker-circle-0"])::before {
+    content: "PENUMBRADO";}
+.marker-card:has(.marker-value:nth-child(1) img[src*="marker-circle-0"]):has(.marker-value:nth-child(2) img[src*="marker-circle-0"])::after {
+    content: "Alcance dos Sentidos reduzido em 75%.";}
+
+/* 3 Marcos */
+.marker-card:has(.marker-value:nth-child(1) img[src*="marker-circle-0"]):has(.marker-value:nth-child(2) img[src*="marker-circle-0"]):has(.marker-value:nth-child(3) img[src*="marker-circle-0"])::before {
+    content: "ONDULADO";}
+.marker-card:has(.marker-value:nth-child(1) img[src*="marker-circle-0"]):has(.marker-value:nth-child(2) img[src*="marker-circle-0"]):has(.marker-value:nth-child(3) img[src*="marker-circle-0"])::after {
+    content: "Role 2d8 e receba um Efeito de Ondulação.";}
+
+/* 4 Marcos */
+.marker-card:has(.marker-value:nth-child(1) img[src*="marker-circle-0"]):has(.marker-value:nth-child(2) img[src*="marker-circle-0"]):has(.marker-value:nth-child(3) img[src*="marker-circle-0"]):has(.marker-value:nth-child(4) img[src*="marker-circle-0"])::before {
+    content: "PARANORMALIZADO";}
+
+.marker-card:has(.marker-value:nth-child(1) img[src*="marker-circle-0"]):has(.marker-value:nth-child(2) img[src*="marker-circle-0"]):has(.marker-value:nth-child(3) img[src*="marker-circle-0"]):has(.marker-value:nth-child(4) img[src*="marker-circle-0"])::after {
+    content: "Role 2d6 e receba um Transtorno Paranormal.";}
+
+/* 5 Marcos */
+.marker-card:has(.marker-value:nth-child(1) img[src*="marker-circle-0"]):has(.marker-value:nth-child(2) img[src*="marker-circle-0"]):has(.marker-value:nth-child(3) img[src*="marker-circle-0"]):has(.marker-value:nth-child(4) img[src*="marker-circle-0"]):has(.marker-value:nth-child(5) img[src*="marker-circle-0"])::before {
+    content: "ABNEGAÇÃO";}
+
+.marker-card:has(.marker-value:nth-child(1) img[src*="marker-circle-0"]):has(.marker-value:nth-child(2) img[src*="marker-circle-0"]):has(.marker-value:nth-child(3) img[src*="marker-circle-0"]):has(.marker-value:nth-child(4) img[src*="marker-circle-0"]):has(.marker-value:nth-child(5) img[src*="marker-circle-0"])::after {
+    content: "Você está incapaz de se conectar com o Arcano.";}
