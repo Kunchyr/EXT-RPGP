@@ -1,4 +1,4 @@
-- Extensões feitas principalmente para o Modelo de Ficha de Minaīchi RPG, meu Sistema Própio.
+- Extensões feitas principalmente para o [Modelo de Ficha de Minaīchi RPG](https://rpgpedia.com/ficha/universal/rFRw3i4pvwUCKC51Xe1y), meu Sistema Própio.
 
 - As Extensões usam o [Loader](https://github.com/LucasLeiteDeveloper/RPGp-Estilos) como base.
 
